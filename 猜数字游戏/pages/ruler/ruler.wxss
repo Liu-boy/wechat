@@ -1,0 +1,8 @@
+/* pages/ruler/ruler.wxss */
+view
+{
+    text-align:start;
+    color:rgb(11, 12, 20);
+    font-size: larger;
+    margin-bottom: 10px;
+}

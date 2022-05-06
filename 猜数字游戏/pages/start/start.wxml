@@ -1,0 +1,9 @@
+<!--pages/start/start.wxml-->
+<view class="box1">欢迎来到猜数字游戏(10次机会)</view>
+<view class="box2">
+<input type="text" placeholder="输入0~100的数字" bindinput="input"/>
+<button type="primary" bindtap="button">{{state}}</button>
+<text>{{jieguo}}</text>
+<text>{{shibai}}</text>
+<text>{{chonglai}}</text>
+</view>

@@ -1,0 +1,7 @@
+/* pages/reference/reference.wxss */
+view
+{
+    text-align: center;
+    line-height: 400px;
+    color: rgb(226, 43, 83);
+}

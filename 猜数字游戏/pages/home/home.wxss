@@ -1,0 +1,17 @@
+/* pages/home/home.wxss */
+image
+{
+    width: 50px;
+    height: 40px;
+    margin: 0 325.2rpx;
+}
+view
+{
+    height:250px;
+}
+.box2
+{
+    height: 40px;
+    width: 184px;
+    margin: auto;
+}

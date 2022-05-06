@@ -1,0 +1,17 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/ruler/ruler",
+        "pages/start/start",
+        "pages/reference/reference"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "猜一猜吧",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

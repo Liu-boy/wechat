@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<view>
+<image src="../../image/2.jpg"></image>
+<navigator url="../start/start" class="box2"><button type="warn">开始游戏</button></navigator>
+</view>
+<view>
+<image src="../../image/1.jpg"></image>
+<navigator url="../ruler/ruler" class="box2"><button type="primary">游戏规则</button></navigator>
+</view>
+<view>
+<image src="../../image/3.jpg"></image>
+<navigator url="../reference/reference" class="box2"><button type="primary">关于我们</button></navigator>
+</view>
