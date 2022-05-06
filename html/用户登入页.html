@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-
+    Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+            
+            border: 1px solid gray;
+            width: 210px;
+            padding-top: 0;
+            margin-left: 40%;
+          
+        }
+        .box1.box2
+        {
+padding: 3px;
+        }
+        .box1 h1
+        {
+            
+            background-color: gray;
+            text-align: center;
+            line-height: 36px;
+            font-weight:900;
+            margin: 0;
+        }
+        .box3 label,.box4 label
+        {
+cursor: pointer;
+        }
+        .box1.box3
+        {
+            margin-bottom: 5px;
+        }
+        .box2.box3 input,.box1.box3 input
+        {
+            width: 146px;
+            height: 17px;
+            padding: 3 2 0;
+            border: 1 solid red;
+        }
+        .box4 input
+        {
+width: 36px;
+height: 10px;
+        }
+        .box4 
+        {
+            margin-bottom: 5px;
+        }
+        .box5
+        {
+            margin-bottom: 5px;
+        }
+        .box5 input
+        {
+            width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        }
+        .box5
+        {
+            padding-left: 48px;
+        }
+        .box6
+        {
+            padding-left: 50px;
+        }
+        .box6 button
+        {
+            height: 21px;
+            cursor: pointer;
+        }
+        .box6 a
+        {
+           text-decoration: none;
+           padding: 3 4 2;
+           color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>用户登入</h1>
+        <div class="box2">
+            <form action="京东商品导购.html" method="post">
+            <div class="box3">
+                <label for="usename">用户名：</label>
+                <input type="text" id="usename" name="username">
+            </div>
+            <div class="box3">
+                <label for="userpassword">密码：</label>
+                <input type="password" id="userpassword" name="password">
+                <input type="reset">
+            </div>
+            <div class="box4 ">
+                <label for="validata">验证码：</label>
+                <input type="text" id="validata">
+                <img src="001.jpg" alt="UWV6" width="36px" height="12px">
+            </div>
+            <div class="box5">
+                <input type="checkbox" id="keep">
+                <label for="keep">记住我的登入信息</label>
+            </div>
+            <div class="box6">
+                <button type="submit">登入</button>
+                <a href="#">用户注册</a>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

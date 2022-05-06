@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str ="javascript编程语言";
+        function strlen(str){
+            var len;
+            var i;
+            len=0;
+            for(i=0;i<str.charCodeAt(i);i++){
+            if(str.charCodeAt(i)>255)
+            len+=2;
+            else
+            len++;
+            }
+            return len;
+        }
+        document.write("<h2>"+str+"</h2>");
+        document.write("<p>实际长度："+strlen(str)+"字节</p>");
+        //标签
+        loop:for(var j=1;j<6;j++)
+        {
+            if(j==2) continue loop;
+            document.write("<br>"+j)
+        }
+        loop1:for(var j=1;j<6;j++)
+        {
+            document.write("<br>"+j+":");
+            for(var i=1;i<6;i++)
+            {
+                if(i==3) continue loop1;
+                document.write(i);
+            }
+        }
+        //对象
+        var me ={
+            name:"张三",
+            Say:function(){
+                return "hi,world!";
+            }
+        }
+        document.write("<h1>"+me.name+":"+me.Say()+"</h1>");
+        // 数组
+        var me1=[
+            "张三",
+            function(){
+                return "hi,world";
+            }
+        ]
+        document.write("<h1>"+me1[0]+":"+me1[1]()+"</h1>");
+        //调用和逻辑分隔（）
+        function hello(user)
+        {
+            return "<h1>"+user+"</h1>"
+        }
+        document.write(hello("hi,world"));
+        //条件运算符？：
+        name=name?name:"no value"
+        alert(name)
+        //void 运算符
+        //switch语句
+        var age =prompt('你好，请输入您的年级',"");
+        switch(age){
+        case "1":
+            alert("你上一年级");
+            break;
+            case "2":
+            alert("你上二年级");
+            break;
+            case "3":
+            alert("你上三年级");
+            break;
+            case "4":
+            alert("你上四年级");
+            break;
+        }
+        //异常处理语句
+        try{
+            alert("执行程序");
+            var err=new Error("异常");
+            throw err;
+        }
+        catch(e){
+            alert("错误名称："+e.name+"错误信息:"+e.message);
+        }
+        finally{
+            alert("ok");
+        }
+        //with语句和空语句
+        // with(Object){
+        //     statements
+        // }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

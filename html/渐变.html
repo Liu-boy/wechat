@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            background: linear-gradient(to top,red,green)
+        }
+        /* 支持多种颜色 */
+        .box2
+        {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            background: linear-gradient(to right,red,green)
+        }
+        .box3
+        {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            background: linear-gradient(to top right,red,green)
+        }
+        /* 支持方向 */
+        /* 支持角度 */
+        .box4
+        {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            background: linear-gradient(0deg,red,green)
+        }
+        .box5
+        {
+width: 300px;
+height: 300px;
+border: 10px solid gray;
+background: radial-gradient(red 0%,green 10%,blue 30%);
+        }
+        .box6
+        {
+width: 500px;
+height: 200px;
+border: 10px solid gray;
+background: radial-gradient(red ,green ,blue );
+        }
+        .box7
+        {
+width: 500px;
+height: 200px;
+border: 10px solid gray;
+background: radial-gradient(circle, red,green ,blue );
+        }
+        .box8
+        {
+width: 500px;
+height: 200px;
+border: 10px solid gray;
+background: radial-gradient(ellipse, red,green ,blue );
+        }
+        .box9
+        {
+width: 500px;
+height: 200px;
+border: 10px solid gray;
+background: -webkit-radial-gradient(60% 40%,closest-side,red,green ,blue );
+        }
+                                   /* x轴与y轴 */
+        body
+        {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+        .box10
+        {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            background: repeating-linear-gradient(0deg,red 10%,green 20%)
+        }
+    </style>
+</head>
+<body>
+    <!-- 线性渐变 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <!-- 径向渐变 -->
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+    <!-- 重复渐变径向与线性是一样的 -->
+    <div class="box10"></div>
+</body>
+</html>

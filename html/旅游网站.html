@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       *
+       {
+           padding: 0;
+           margin: 0;
+       }
+       
+/* 二级菜单部分css */
+       .box1
+       {
+width: 1530px;
+height: 500px;
+background-image: url();
+background-color: rgb(27, 147, 147);
+background-image: url(02.jpg);
+background-repeat:no-repeat ;
+background-size:cover;
+       }
+       .box1>ul
+       {
+         list-style: none;
+         height: 300px;
+         text-align: center;
+       }
+       .box1>ul>li
+       {
+          float: left;
+           line-height: 50px;
+       }
+       .box1>ul>li>a
+       {
+           text-decoration: none;
+           color: white;
+    font-size: 19px;
+    padding-right: 80px;
+       }
+       .li
+       {
+         padding-right: 10%;  
+       }
+       .li1
+       {
+padding-left: 180px;
+       }
+       .box1>ul>li ul
+       {
+           display:none;
+           color: white;
+           border: 1px solid rgb(220, 213, 213);
+          
+       }
+       .box1>ul>li ul li
+       {
+        border: 1px solid rgb(8, 8, 8);
+        background-color: rgb(157, 160, 157);
+       }
+       .box1>ul>li ul li a
+       {
+           text-decoration: none;
+           color: aqua;
+       }
+       .a:hover>ul
+       {
+display: block;
+/* transform: translate(0,50px); */
+transition: all linear 3s;
+       }
+       .a ul li
+       {
+           list-style: none;
+       }
+       .a ul li a
+       {
+           text-decoration: none;
+       }
+       .b
+       {
+           padding: left 180px;
+       }
+/* 动画区域css */
+.box2
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: rgb(240, 235, 229);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.box2>div
+{
+    width: 350px;
+    height: 40%;
+    background-color: white;
+    text-align: center;
+    line-height: 160px;
+    transform-style: preserve-3d;
+    perspective: 1200px;
+    transform-origin: center;
+    font-size: 20px;
+}
+.box2>div a{
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    width: 100%;
+}
+.box2>div:hover
+{
+    transform: rotateY(180deg) ;
+    transition:  all linear 0.8s;
+    background-color: aqua;
+}
+/* 热门景点css区域 */
+.box3
+{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.box3>div
+{
+    width: 30%;
+    height: 80%;
+    background-color:white;
+    background-image: url(02.jpg);
+    background-size: cover;
+}
+.p
+{
+    font-size: 40px;
+}
+.box3 span
+{
+    display: none;
+    color: white;
+}
+.box3>div:hover>span
+{
+    display: block;
+}
+/* 交通指南css区域 */
+.box4
+{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+}
+   </style>
+</head>
+<body>
+    <script>console.log(window.screen);</script>
+   <div class="box">
+       <div class="box1">
+           <ul>
+               <li class="a c"><a href="" class="li1">网址首页</a>
+               </li>
+               <li class="a"><a href="">景点概览</a>
+                <ul>
+                    <li><a href="">鄱阳湖</a></li>
+                    <li><a href="">九江庐山</a></li>
+                    <li><a href="">吉安井冈山</a></li>
+                    <li><a href="">滕王阁</a></li>
+                    <li><a href="">三清山</a></li>
+                </ul>
+               </li>
+               <li class="a"><a href="">新闻中心</a>
+                   <ul>
+                    <li><a href="">景区公告</a></li>
+                    <li><a href="">景区咨询</a></li>
+                    <li><a href="">精彩活动</a></li>
+                </ul>
+              </li>
+               <li class="a"><a href="">玩转景区</a>
+                   <ul>
+                    <li><a href="">舌尖美食</a></li>
+                    <li><a href="">交通指南</a></li>
+                    <li><a href="">酒店住宿</a></li>
+                    <li><a href="">地图导航</a></li>
+                    <li><a href="">周边景区</a></li>
+                </ul>
+               </li>
+               <li class="a"><a href="">电子商务</a>
+                   <ul>
+                    <li><a href="">酒店预订</a></li>
+                    <li><a href="">门票预订</a></li>
+                    <li><a href="">团队预定</a></li>
+                </ul>
+            </li>
+               <li class="a"><a href="">服务中心</a>
+                   <ul>
+                    <li><a href="">商务信息</a></li>
+                    <li><a href="">导游预约</a></li>
+                    <li><a href="">旅游指南</a></li>
+                    <li><a href="">常见问题</a></li>
+                    <li><a href="">在线互动</a></li>
+                </ul>
+               </li>
+               <li class="a"><a href="">政务公开</a>
+                   <ul>
+                    <li><a href="">试点专栏</a></li>
+                    <li><a href="">政务咨询</a></li>
+                    <li><a href="">职能机构</a></li>
+                    <li><a href="">文明旅游</a></li>
+                    <li><a href="">提升亮点</a></li>
+                </ul>
+               </li>
+               <li class="a"><a href="" class="li">景区风光</a>
+                   <ul>
+                    <li><a href="">主题视频</a></li>
+                    <li><a href="">主题图片</a></li>
+                    <li><a href="">虚拟旅游</a></li>
+                </ul>
+              </li>
+           </ul>
+       </div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+   </div>
+<div class="box2">
+<div><a href="">酒店住宿</a></div>
+<div><a href="">景区景点</a></div>
+<div><a href="">景区集市</a></div>
+<div><a href="">交通指南</a></div>
+<div><a href="">地图导航</a></div>
+<div><a href="">旅游指南</a></div>
+<div><a href="">舌尖美食</a></div>
+<div><a href="">景区停车场</a></div>
+</div>
+<p class="p">热门景点</p>
+<div class="box3">
+<div><span>11111</span></div>
+<div><span>3333</span></div>
+<div><span>5555</span></div>
+</div>
+<p class="p">交通指南</p>
+<div class="box4">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</body>
+</html>

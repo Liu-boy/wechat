@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+            width: 100px;
+        }
+        .box2
+        {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://ww.baidu.com" method="post" target="_blank">
+        <table border="1px" id="form1">
+            <tr align="center">
+                <td colspan="4"><strong>产品订购</strong></td>
+            
+        </tr>
+            <tr>
+                <td>姓名</td>
+                <td><input type="text" class="box1"></td>
+                <td>联系电话</td>
+                <td><input type="text"class="box1"></td>
+            </tr>
+            <tr>
+                <td>产品名称</td>
+                <td colspan="3"><input type="text" class="box2"></td>
+            </tr>
+            <tr>
+                <td>付款方式</td>
+                <td colspan="3"><input type="radio" name="b">微信<input type="radio" name="b">支付宝<input type="radio" name="b">货到付款</td>
+            </tr>
+            <tr>
+                <td>关注产品</td>
+                <td colspan="3"><input type="checkbox" name="a">家具<input type="checkbox" name="a">家店<input type="checkbox">服装<input type="checkbox">化妆品</td>
+            </tr>
+            <tr>
+                <td>地址</td>
+                <td colspan="3"><select name="dizhi">
+                    <option value="1">广东</option>
+                    <option value="1">广东</option>
+                    <option value="1">广东</option>
+                    </select>
+                   <select name="di">
+                        <option value="1">广州</option>
+                        <option value="1">广州</option>
+                        <option value="1">广州</option>
+                </select>
+                <input type="text">
+            </td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td colspan="3">
+                    <textarea name="text" id="1" cols="45" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="4">
+                    <input type="submit" style="background-color:rgba(128, 128, 128, 0.788);">
+                    <input type="reset" style="background-color:rgba(128, 128, 128, 0.788);">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

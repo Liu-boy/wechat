@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box
+{
+    width: 200px;
+    margin: 200px auto;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+.box input
+{
+    border: 0;
+    outline: none;
+    height: 32px;
+}
+img
+{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 6px;
+    left: 146px;
+}
+    </style>
+</head>
+<body>
+   <div class="box">
+    <label for="">
+        <img src="5.jpg" alt="">
+    </label>
+    <input type="password">
+        </form>
+   </div>
+   <script>
+       var s1=document.querySelector('label');
+       var s2=document.querySelector('input');
+       var mark=0;
+       s1.onclick=function(){
+           if(mark==0){
+           s2.type='text';
+           mark=1;
+           }else
+           {
+               s2.type='password';
+               mark=0;
+           }
+       }
+   </script>
+</body>
+</html>

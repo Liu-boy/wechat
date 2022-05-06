@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,p
+        {
+            width: 100px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="an">当前系统时间</button>
+    <div class="box1"></div><br><br><br><br>
+    <p>7777</p>
+    <script>
+        //事件源
+        var btn=document.getElementById('an')
+        var time=document.querySelector('div');
+   var s=document.querySelector('p');
+   s.innerHTML='<strong>'+nowtime()+'</strong>';
+//事件类型
+//事件处理程序
+function nowtime(){
+var t=new Date();
+var year=t.getFullYear();
+var month=t.getMonth()+1;
+var dates=t.getDate();
+var day=t.getDay();
+var hours=t.getHours();
+var minute=t.getMinutes();
+var second=t.getSeconds();
+var seconds=t.getMilliseconds();
+var t1=t.getTime();
+var arr=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+return '今天是：'+year+'年'+month+'月'+dates+'号'+arr[day]+hours+'时'+minute+'分'+second+'秒'+seconds+'毫秒';
+// return t1;
+
+}
+btn.onclick=function(){
+   time.innerText=nowtime();
+}
+    </script>
+</body>
+</html>

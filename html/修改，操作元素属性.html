@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 1000px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <button id="t1">图片1</button>
+    <button id="t2">图片2</button>
+    <img src="bbg.jpg" alt="">
+<script>
+    var a=document.getElementById('t1');
+    var b=document.getElementById('t2');
+    var img=document.querySelector('img');
+    a.onclick=function(){
+        img.src='bg.png';
+    }
+    b.onclick=function(){
+        img.src='bbg.jpg';
+    }
+</script>
+</body>
+</html>
